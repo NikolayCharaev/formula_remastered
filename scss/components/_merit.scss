@@ -1,0 +1,151 @@
+.company-merit {
+  background-color: $lightBlue;
+  padding: 120px 250px;
+
+  @media (max-width: 1370px) {
+    padding: 120px 160px ;
+  }
+  @media (max-width: 1260px) {
+    padding: 120px 140px;
+  }
+
+  @media (max-width: 902px) {
+    padding: 78px 0px 40px 0px;
+  }
+
+  @media(max-width:390px) {
+    padding-left: 0;
+  }
+
+  .company-merit__title {
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 30px;
+
+    opacity: 0.9;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 105px;
+      height: 3px;
+      background-color: $blue;
+    }
+
+
+    @media(max-width:390px) {
+      padding-left: 0;
+    }
+  }
+
+  .company-merit__items {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+
+    @media (max-width: 1260px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 980px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 770px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-width: 100%;
+    }
+    .company-merit__item {
+      @media (max-width: 1552px) {
+      }
+
+      @media (max-width: 1260px) {
+        max-width: 353px;
+      }
+    }
+
+    .company-merit__item {
+      background-color: $white;
+      padding: 0 30px;
+      border-radius: 30px;
+      transition: all 0.2s ease-in;
+   
+
+      .company-merit__item-title {
+        font-weight: 500;
+        font-size: 23px;
+        line-height: 30px;
+        color: $black;
+        margin: 30px 0 20px;
+        transition: all 0.2s ease-in;
+
+        @media (max-width: 1360px) {
+          font-size: 20px;
+          line-height: 30px;
+        }
+      }
+      .company-merit__item-description {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 23px;
+        color: #767676;
+        opacity: 0.9;
+        margin-bottom: 43px;
+
+        @media (max-width: 1360px) {
+          font-size: 14px;
+          line-height: 23px;
+        }
+      }
+      .company-merit__date-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        .company-merit__date {
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 23px;
+          color: #888888;
+          opacity: 0.9;
+        }
+        .company-merit__link {
+          text-decoration: none;
+          color: $blue;
+          opacity: 0.9;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 18px;
+          padding: 6px 22px;
+          border-radius: 20px;
+          background-color: $lightBlue;
+          transition: all 0.2s ease-in;
+          //   &:hover {
+          //     background-color: $blue;
+          //     color: $white;
+          //   }
+
+
+          @media(max-width:623px) {
+            margin-left: 40px;
+          }
+        }
+      }
+
+      &:hover {
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
+      }
+      &:hover .company-merit__link {
+        background: $blue;
+        color: $white;
+      }
+      &:hover .company-merit__item-title {
+        color: $blue;
+      }
+    }
+  }
+}

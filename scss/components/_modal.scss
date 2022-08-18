@@ -1,0 +1,117 @@
+.modal {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+  top: -1000px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  background: rgba(76, 135, 236, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  overflow-y: scroll;
+  padding: 60px 15px;
+  
+  .modal__inner {
+    display: flex;
+    flex-direction: column;
+    max-width: 580px;
+    background: #ffffff;
+    box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.15);
+    padding: 32px 40px;
+    border-radius: 30px;
+  }
+
+  .modal__top {
+      position: relative;
+    .modal__title {
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 38px;
+      color: $black;
+      margin-bottom: 10px;
+    }
+    .modal__text {
+      color: rgba(118, 118, 118, 1);
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      margin-bottom: 50px;
+      width: 500px;
+    }
+
+    .modal__close{
+        position: absolute;
+        top: -30px;
+        right: -40px;
+        border: none;
+        cursor: pointer;
+    }
+  }
+
+  .modal__form {
+    .modal__form-name {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 18px;
+      color: #767676;
+      margin-bottom: 7px;
+    }
+
+    .modal__form-input {
+      width: 500px;
+      height: 55px;
+      background: #ffffff;
+      border: 1px solid #c4c4c4;
+      border-radius: 15px;
+      padding: 17px 16px;
+    }
+    .modal__form-textarea {
+      background: #ffffff;
+      border: 1px solid #c4c4c4;
+      border-radius: 15px;
+      width: 500px;
+      height: 200px;
+    }
+  }
+
+  .modal__form-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+
+    .modal__form-politic {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      width: 232px;
+      color: #9f9f9f;
+      margin-right: 50px;
+    }
+  }
+
+}
+  
+.modal_active {
+  position: fixed;
+  top: 0;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.hidden {
+    overflow: hidden;
+}

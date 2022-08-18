@@ -1,0 +1,21 @@
+
+body{
+    font-family: 'SF UI Text';
+    color: rgba(0, 0, 0, 1);
+}
+
+.container {
+    max-width: 1450px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.button-general{
+    color: $white;
+    background-color: $blue;
+    padding: 18px 28px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+

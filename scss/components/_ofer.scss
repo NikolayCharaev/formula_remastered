@@ -1,0 +1,145 @@
+.ofer {
+  .ofer__background{
+    background-position: top center;
+    background-repeat: no-repeat;
+    min-height: 673px;
+    object-fit:cover;
+
+
+
+    @media(max-width:390px){
+      min-height: 514px;
+      background-repeat: no-repeat;
+      object-fit:cover;
+    }
+  }
+  position: relative;
+  .ofer__content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 17%;
+    max-width: 378px;
+
+    @media (max-width: 904px) {
+      left: 50%;
+      margin-left: -25%;
+    }
+
+    @media (max-width: 588px) {
+      left: 43%;
+      margin-left: -25%;
+      margin-right: 25%;
+    }
+
+    @media (max-width: 543px) {
+      min-width: 350px;
+    }
+
+    @media (max-width: 500px) {
+      left: 43%;
+      top: 124px;
+      margin-left: -25%;
+      margin-right: 25%;
+    }
+
+    @media (max-width: 446px) {
+      left: 40%;
+     
+    }
+    @media (max-width: 424px) {
+      left: 38%;
+    }
+
+    @media (max-width: 424px) {
+      left: 34%;
+    }
+    
+    @media (max-width: 390px) {
+      left: 29%;
+      top: 47px;
+      margin-left: -25%;
+      margin-right: 25%;
+    }
+    
+    @media (max-width: 370px) {
+        min-width: 200px;
+    }
+    .ofer__content-title {
+      font-weight: 500;
+      font-size: 38px;
+      line-height: 45px;
+      color: $white;
+      margin-bottom: 27px;
+
+      @media (max-width: 612px) {
+        font-size: 30px;
+        margin-bottom: 20px;
+        line-height: 35px;
+      }
+
+      @media (max-width: 492px) {
+        font-size: 24px;
+        line-height: 32px;
+      }
+
+      @media (max-width: 380px) {
+        margin-right: 10px;
+
+      }
+    }
+    .ofer__content-description {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 100px;
+
+      @media (max-width: 612px) {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 114px;
+      }
+
+      @media (max-width: 492px) {
+        font-size: 14px;
+        line-height: 22px;
+      }
+
+      @media (max-width: 380px) {
+        font-size: 11px;
+      }
+    }
+  
+    
+  }
+  .ofer__form {
+    display: flex;
+    flex-direction: column;
+  
+
+    .ofer__form-input {
+      padding: 16px 21px;
+      margin-bottom: 10px;
+      border-radius: 15px;
+      background-color: rgba(255, 255, 255, 1);
+      border: none;
+      ::placeholder{
+        font-family: 'inter-regular';
+      }
+    }
+
+
+    @media(max-width:370px) {
+      display: block;
+      min-width: 350px;
+
+      input{
+        width: 300px;
+      }
+      button{
+        width: 300px;
+      }
+    }
+  }
+}
