@@ -450,6 +450,32 @@ body {
   }
 }
 
+.estate .estate-big-image {
+  background-image: url(../../img/estate-big.jpg);
+  height: 750px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+@media (max-width: 1120px) {
+  .estate .estate-big-image {
+    height: 550px;
+  }
+}
+
+@media (max-width: 821px) {
+  .estate .estate-big-image {
+    height: 450px;
+  }
+}
+
+@media (max-width: 622px) {
+  .estate .estate-big-image {
+    height: 300px;
+  }
+}
+
 .achievements {
   background-color: #f7fafd;
   padding: 120px 0 127px;
@@ -719,6 +745,8 @@ body {
 }
 
 .ofer .ofer__background {
+  background-image: url(../../img/ofer-bg.jpg);
+  background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
   min-height: 673px;

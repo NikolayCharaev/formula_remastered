@@ -1,4 +1,5 @@
 .estate {
+ 
   position: relative;
   .estate__info {
     display: flex;
@@ -85,5 +86,25 @@
     }
 }
  
-  
+.estate-big-image{
+  background-image: url(../../img/estate-big.jpg);
+  height: 750px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+
+  @media(max-width: 1120px){
+    height: 550px;
+  }
+  @media(max-width: 821px){
+    height: 450px;
+  }
+  @media(max-width: 622px){
+    height: 300px;
+  }
 }
+}
+
+
+
